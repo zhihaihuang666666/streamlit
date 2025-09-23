@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import streamlit.components.v1 as components
 
 ## ===================== 加载模型 =====================##
-MODEL_PATH = "model.pkl"
+MODEL_PATH = "xgb_model.pkl"
 model = joblib.load(MODEL_PATH)
 
 # 查看特征 - 这会显示模型期望的特征顺序
@@ -162,3 +162,4 @@ if st.button("预测单样本"):
 
 
 ##打开终端contro+R,再运行streamlit run "C:\Users\HZH\Desktop\streamlit.app\XGBoost\prediction.py"##
+
