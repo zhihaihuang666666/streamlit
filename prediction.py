@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import streamlit.components.v1 as components
 
 ## ===================== 加载模型 =====================##
-MODEL_PATH = "C:/Users/HZH/Desktop/streamlit.app/XGBoost/xgb_model.pkl"
+MODEL_PATH = "model.pkl"
 model = joblib.load(MODEL_PATH)
 
 # 查看特征 - 这会显示模型期望的特征顺序
@@ -157,6 +157,7 @@ if st.button("预测单样本"):
             
     except Exception as e:
         st.error(f"预测过程出错：{str(e)}")
+
 
 
 
